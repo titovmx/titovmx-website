@@ -1,10 +1,10 @@
 import { Titillium_Web } from 'next/font/google';
 import Head from 'next/head';
 import clsx from 'clsx';
-import Header from '@/components/header/Header';
 import styles from '@/styles/Home.module.css';
 import AboutMe from '../components/aboutMe/AboutMe';
 import Contacts from '../components/contacts/Contacts';
+import Header from '../components/header/Header';
 import Resume from '../components/resume/Resume';
 
 const titillium = Titillium_Web({ weight: ['400', '600', '700'], subsets: ['latin'] });
