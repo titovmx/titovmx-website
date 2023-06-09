@@ -1,7 +1,11 @@
+.header {
+  margin-top: 3rem;
+}
+
 .header ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+  display: none;
+  flex-direction: column;
+  align-items: center;
   gap: 4rem;
   font-size: 1.5rem;
   font-weight: 700;
@@ -21,4 +25,11 @@
 .header li:hover:after {
   width: 100%;
   background: var(--primary-dark-color);
+}
+
+@media (min-width: 768px) {
+  .header ul {
+    display: flex;
+    flex-direction: row;
+  }
 }

@@ -1,33 +1,16 @@
 import Link from 'next/link';
+import { NavItem, NavItemId } from '../../types/navigation';
 import styles from './Header.module.css';
 
-type NavItem = {
-  anchor: string;
+type NavElement = {
+  anchor: NavItemId;
   title: string;
 };
 
-const NAV_ITEMS: NavItem[] = [
-  {
-    anchor: 'home',
-    title: 'Home',
-  },
-  {
-    anchor: 'about',
-    title: 'About me',
-  },
-  {
-    anchor: 'resume',
-    title: 'Resume',
-  },
-  {
-    anchor: 'skills',
-    title: 'Skills',
-  },
-  {
-    anchor: 'contacts',
-    title: 'Contacts',
-  },
-];
+export const NAV_ITEMS: NavElement[] = Object.keys(NavItem).map((navItemId) => ({
+  anchor: NavItem[navItemId as keyof typeof NavItem],
+  title: navItemId,
+}));
 
 export default function Header() {
   return (
@@ -36,7 +19,9 @@ export default function Header() {
         <ul>
           {NAV_ITEMS.map((item) => (
             <li key={item.anchor}>
-              <Link href={`#${item.anchor}`}>{item.title}</Link>
+              <Link href={`#${item.anchor}`} scroll={false}>
+                {item.title}
+              </Link>
             </li>
           ))}
         </ul>

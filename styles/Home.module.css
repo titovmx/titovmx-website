@@ -1,8 +1,26 @@
-.main {
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem;
+  padding: 0 2rem;
   min-height: 100vh;
   box-sizing: border-box;
+}
+
+.app section {
+  margin: 4rem 0;
+}
+
+.app section:first-child {
+  margin-top: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .app {
+    padding: 2rem 6rem;
+  }
+
+  .app section {
+    margin: 6rem 0;
+  }
 }

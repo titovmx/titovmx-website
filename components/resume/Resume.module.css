@@ -1,0 +1,9 @@
+.resume {
+  text-align: center;
+}
+
+.link {
+  color: var(--primary-dark-color);
+  cursor: pointer;
+  font-size: 1.5rem;
+}
