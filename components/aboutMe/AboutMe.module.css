@@ -29,7 +29,6 @@
 
   .container {
     flex-direction: row-reverse;
-    padding: 0 4rem;
   }
 
   .avatarContainer {

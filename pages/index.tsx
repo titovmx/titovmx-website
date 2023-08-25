@@ -3,6 +3,7 @@ import Head from 'next/head';
 import clsx from 'clsx';
 import styles from '@/styles/Home.module.css';
 import AboutMe from '../components/aboutMe/AboutMe';
+import Achievements from '../components/achievements/Achievements';
 import Contacts from '../components/contacts/Contacts';
 import Header from '../components/header/Header';
 import Resume from '../components/resume/Resume';
@@ -25,6 +26,7 @@ export default function Home() {
         <main>
           <AboutMe />
           <Contacts />
+          <Achievements />
           <Resume />
         </main>
       </div>
