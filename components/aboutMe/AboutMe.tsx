@@ -17,7 +17,7 @@ export default function AboutMe() {
         <h1>Hi, my name is Maxim Titov</h1>
         <h2>I am a senior frontend developer</h2>
         <p className={styles.bio}>
-          I have developed products to help teams to automate their processes and efficiently collaborate worldwide
+          I have developed products to help teams to automate their processes and efficiently collaborate worldwide.
         </p>
       </div>
     </section>
